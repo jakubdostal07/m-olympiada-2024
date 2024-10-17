@@ -1,5 +1,5 @@
 CXX=g++
-CFLAGS=-g -pipe -static -Wall -std=c++20 -Isrc
+CFLAGS=-g -pipe -static -Wall -std=c++20 -Isrc -DEVAL -O2
 LDFLAGS=
 
 SRC=src
