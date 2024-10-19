@@ -92,6 +92,12 @@ int main(int argc, char *argv[]) {
 			}
 
 			Transakce mozna_transakce = Transakce(nabidka, poptavka);
+
+			// Pokud není možný profit tak přeskočíme
+			if (mozna_transakce.getProfit() < 1) {
+				continue;
+			}
+
 			mozne_transakce.push_back(mozna_transakce);
 		}
 	}
